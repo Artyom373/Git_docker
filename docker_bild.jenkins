@@ -14,7 +14,7 @@ pipeline {
      stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
-                dir ('docker/cowsay') {
+                dir ('images') {
                 	sh 'docker build -t net775/cowsay:latest . '
                 }
             }

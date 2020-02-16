@@ -19,7 +19,6 @@ pipeline {
                 }
             }
         }
-            }
         stage("docker Test") {
             steps {
                 echo " ============== start image =================="
@@ -27,6 +26,5 @@ pipeline {
                 docker run net775/toolbox:latest "TEST"
                 '''
             }
-        }
     }
     }

@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('images') {
-                	sh 'docker build -t net775/cowsay:latest . '
+                	sh 'docker build -t net775/cowsay . '
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 echo " ============== start image =================="
                 sh '''
-                docker run net775/toolbox:latest "TEST"
+                docker run net775/cowsay "TEST"
                 '''
             }
             }

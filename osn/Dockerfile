@@ -7,6 +7,4 @@ COPY . /usr/scr/app/
 RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8080
 
-ENZ TZ Eurupe/Moscow
-
 CMD ["python", "Hello.py"]

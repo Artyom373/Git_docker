@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('osn') {
-                	sh 'docker build -t hello-world . '
+                	sh 'docker build -t web-hello . '
                 }
             }
         }

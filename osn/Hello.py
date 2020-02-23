@@ -1,7 +1,7 @@
 import os
 import json
 import datetime
-from flask imprt Flask
+from flask import Flask
 
 app = Flask(__name__)
 

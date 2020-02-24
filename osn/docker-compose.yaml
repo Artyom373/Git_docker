@@ -1,0 +1,7 @@
+version: "3"
+
+volumes:
+  mangodb_volume:
+
+services:
+  yutube_stati
